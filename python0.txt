@@ -1,0 +1,23 @@
+# Define prices for three items 
+item1 = float(input("Enter price of item 1: ")) 
+item2 = float(input("Enter price of item 2: ")) 
+item3 = float(input("Enter price of item 3: ")) 
+
+# Define the total budget 
+budget = float(input("Enter your total budget: ")) 
+
+#Calculate the total cost of items 
+total_cost = item1 + item2 + item3  
+
+#Compare total cost with budjet 
+print("\nTotal cost of items: ", total_cost ) 
+print("Your budget : " , budget) 
+
+
+#Calculate the difference 
+if total_cost  <= budget: 
+   print("You are within the budjet.") 
+   print("Money left:", budget - total_cost ) 
+else: 
+   print("You are over the budget.") 
+   print("You need more money:", total_cost - budget) 
